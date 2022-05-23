@@ -1,0 +1,182 @@
+
+
+.Header{
+
+
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 14vh;
+    align-items: center;
+    max-width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.Logoheader__conteiner{
+    
+    align-items: center;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.SisterLogo{
+    width: 40%;
+    height: 40%;
+    filter: drop-shadow(0px 3px 3px rgb(172, 144, 32));
+}
+
+.h3header{
+    color: white;
+    font-size: medium ;
+    margin-top: 5%;
+}
+
+.header_tittle{
+   display:contents;
+    align-items: center;
+    
+   
+}
+
+
+
+.menu_items{
+    
+}
+.menu_link{
+    text-transform:capitalize;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+.header_number{
+    display: flex;
+    
+}
+.header_number_number{
+    font-size: 14px;
+}
+
+.header_number_number{
+    color: white;
+}
+
+
+.Social_media{
+}
+
+.Social_media_logo{
+    width: 24px;
+    height: 24px;
+    gap: 20px;
+    margin: 0 15px 0 0;
+}
+
+
+.hamburger{
+    width: 40px;
+    height: 30px;
+    background:none;
+    border: none;
+    display: none;
+}
+.hamburger_img{
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 5px;
+}
+
+
+@media(max-width:1200px) {
+    .h3header{
+        font-size: small;
+        margin-top: 10%;
+    }
+}
+@media(max-width:992px) {
+    .header_tittle{
+        justify-content: space-around;
+    }
+    .menu_link{
+        font-size: 12px;
+    }
+    .h3header{
+        margin-top: 10%;
+        font-size:10px;
+    }
+    .header_number_logo{
+        width: 18px;
+    }
+    .header_number_number{
+        font-size: 10px;
+    }
+    
+}
+@media(max-width:767px) {
+    .header_tittle{
+        display: none;
+    }
+    .h3header{
+        margin-left: 3%;
+        font-size:12px;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+@media(max-width:575px) {
+    .Social_media_logo{
+        width: 30px;
+    }
+    .h3header{
+       display: none;
+    }
+    .header_number_logo{
+        margin-right: 5px;
+        width: 20px;
+    }
+    .SisterLogo{
+        width: 60px;
+    }
+}
+
+@media(max-width:426px) {
+    .Social_media_logo{
+        width: 30px;
+    }
+    .h3header{
+       display: none;
+    }
+    .header_number_logo{
+        display: none;
+    }
+    .SisterLogo{
+        width: 55px;
+    }
+    .header_number_number{
+        font-size: 8px;
+    }
+}
+
+@media(max-width:374px) {
+    .Social_media_logo{
+       
+    }
+    .Social_media_logo_a_whats{
+        display: none;
+    }
+    .SisterLogo{
+        width: 45px;
+    }
+    .header_number_number{
+        font-size: 8px;
+    }
+}

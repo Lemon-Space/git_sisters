@@ -1,0 +1,136 @@
+.ListEyebrow{
+    width: 100%;
+    height: max-content;
+}
+
+.ListEyebrow_h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.ListEyebrow_main{
+    margin-top: 5%;
+    width: 80%;
+    height: 600px;
+    
+    margin-left: 9%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ListEyebrow_main_tittle{
+    width: 25%;
+    height: 520px;
+    border: 2px solid red;
+    border-radius: 30px;
+    background-color: rgba(255, 209, 96, 1);
+}
+
+.ListEyebrow_main_h3{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.ListEyebrow_main_tittle_p{
+    margin-top: 2%;
+    font-size: 18px;
+    padding-left: 20%;
+    width: 80%;
+    text-align: center;
+}
+.ListEyebrow_main_button{
+    margin-left: 15%;
+    width: 70%;
+    border-radius: 15px;
+    height: 40px;
+    background-color: darkred;
+    color: white;
+    
+}
+
+.ListEyebrow_prise{
+    width: 50%;
+}
+
+.ListEyebrow_prise_img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:1200px) {
+   
+}
+@media(max-width:992px) {
+    .ListEyebrow_h1{
+        font-size: 28px;
+    }
+    .ListEyebrow_main{
+        height: 500px;
+    }
+    .ListEyebrow_main_tittle{
+        height: 400px;
+    }
+    .ListEyebrow_main_h3{
+        font-size: 18px;
+    }
+    .ListEyebrow_main_tittle_p{
+        font-size: 13px;
+    }
+    .ListEyebrow_main_button{
+        font-size: 10px;
+    }
+    
+}
+@media(max-width:767px) {
+    .ListEyebrow_h1{
+        font-size: 22px;
+    }
+    .ListEyebrow_main{
+        height: 400px;
+    }
+    .ListEyebrow_main_tittle{
+        height: 350px;
+    }
+    .ListEyebrow_main_h3{
+        font-size: 20px;
+    }
+    .ListEyebrow_main_tittle_p{
+        font-size: 11px;
+    }
+    .ListEyebrow_main_button{
+        font-size: 12px;
+    }
+}
+
+
+@media(max-width:430px) {
+    .ListEyebrow_main{
+        flex-wrap: wrap;
+        height: max-content;
+
+    }
+    .ListEyebrow_main_tittle{
+        height: 200px;
+        width: 70%;
+        
+    }
+    .ListEyebrow_prise{
+        width: 100%;
+        margin-top: 15%;
+    }
+    .ListEyebrow_main_tittle_p{
+        font-size: 11px;
+    }
+    .ListEyebrow_main_tittle{
+        height: 260px;
+    }
+}
+
+@media(max-width:374px) {
+    .ListEyebrow_main_tittle_p{
+        font-size: 11px;
+    }
+    .ListEyebrow_main_tittle{
+        height: 300px;
+    }
+}

@@ -1,0 +1,251 @@
+.Insta{
+    margin-top: 7%;
+    display: flex;
+    
+}
+
+
+.insta_main{
+    width: 55%;
+    height: 600px;
+}
+.insta_h2{
+    color: rgba(121, 3, 3, 1);
+    margin-left: 28%;
+    margin-bottom: 2%;
+    font-size: 28px;
+}
+
+
+
+.insta_tittle_button{
+    margin: 8% 0 0 32%;
+    
+}
+
+.insta_tittle{
+    color: black;
+    font-style: oblique;
+    text-align: center;
+    font-size: 22px;
+    background: linear-gradient(to left,rgb(250, 224, 175), rgb(225, 160, 148));
+    width: 80%;
+    border-radius: 20px;
+    opacity: 0.8;
+    box-shadow:  5px 5px 5px #a70c04;
+}
+
+.insta_button{
+    margin-top: 6%;
+    width: 80%;
+    height: 60px;
+    border-radius: 15px;
+    color: white;
+    transition-duration: 1s;
+    background-color: rgb(154, 2, 2) ;
+    box-shadow:  3px 3px 3px rgb(255, 209, 96, 1);
+    font-size: 26px;
+    border: 3px solid rgb(154, 2, 2) ;
+    
+}
+
+.insta_button:hover{
+    top: 2px;
+    box-shadow: 0 5px 0px #3c354a;
+    background-color: rgba(255, 209, 96, 1);
+    color: rgb(135, 24, 115);
+
+}
+
+.insta_button_img{
+    width: 20%;
+    height: 44px;
+    padding-right: 3%;
+}
+
+.insta_button_a{
+  
+   color: white;
+   font-size: 22px;
+   font-style: oblique;
+
+   
+}
+
+
+
+/* .insta_discount{
+   width: 50%;
+   text-align: center;
+   border-radius: 20px;
+   margin-left: auto;
+   margin-right: 14%;
+   margin-top: 10%;
+   padding: 1%;
+    background-color: rgba(250, 216, 95, 1);
+    box-shadow: 0px 4px 31px -5px rgb(167, 1, 1);
+}
+.span{
+    font-size: 70%;
+} */
+
+.insta_telephone{
+    margin-left: 0;
+    margin-top: 3%;
+    transform: rotate(7deg);
+    display: flex;
+    width: 25%;
+}
+
+.insta_telephone_img{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+
+
+.insta_telephone_list{
+    position: relative;
+    width: 76%;
+    height: 85%;
+    border-radius: 20px;
+    margin-left: 7%;
+    margin-top: 5%;
+    
+}
+
+
+
+
+@media(max-width:1199px) {
+    .Insta{
+        width: 100%;
+    }
+    .insta_main{
+    
+        height: 550px;
+    }
+    .insta_h2{
+        font-size: 24px;
+    }
+    .insta_tittle{
+        font-size: 18px;
+       
+    }
+    .insta_button{
+        height: 70px;
+        font-size: 18px;
+    }
+
+
+   
+}
+@media(max-width:991px) {
+    .Insta{
+        width: 100%;
+    }
+    .insta_main{
+    
+        height: 500px;
+    }
+    .insta_h2{
+        font-size: 22px;
+    }
+    .insta_tittle{
+        font-size: 18px;
+        
+    }
+    .insta_button{
+        height: 60px;
+        font-size: 12px;
+        }
+
+      
+    
+}
+
+@media(max-width:768px) {
+    .insta_main{
+    
+        height: 400px;
+    }
+    .insta_h2{
+        font-size: 16px;
+    }
+    .insta_tittle{
+        font-size: 14px;
+        
+    }
+    .insta_button{
+        height: 40px;
+        font-size: 12px;
+        }
+    .insta_button_img{
+        height: 32px;
+    }
+    .insta-discount{
+        font-size: 6px;
+        height: 20px;
+     
+     }
+   
+}
+
+@media(max-width:430px) {
+    .Insta{
+        flex-wrap: wrap;
+    }
+    .insta_main{
+        width: 100%;
+        height: 280px;
+        margin-left: -15%;
+    }
+    .insta_telephone{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .insta_h2{
+        font-size: 20px;
+    }
+    .insta_tittle{
+        width: 280px;
+        font-size: 18px;
+        
+    }
+    .insta_button{
+        width: 280px;
+        height: 40px;
+        font-size: 18px;
+        }
+        
+}
+@media(max-width:374px) {
+    .Insta{
+        flex-wrap: wrap;
+    }
+    .insta_main{
+        width: 100%;
+        height: 280px;
+        margin-left: -15%;
+    }
+    .insta_telephone{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .insta_h2{
+        font-size: 16px;
+    }
+    .insta_tittle{
+        width: 240px;
+        font-size: 14px;
+        
+    }
+    .insta_button{
+        width: 240px;
+        height: 40px;
+        font-size: 12px;
+        }
+        
+}
+
+
