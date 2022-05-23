@@ -1,0 +1,238 @@
+.Catalog{
+    width: 100%;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.Catalog_h1{
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 2%;
+}
+
+.catalog_menu{
+    
+    margin: 1% 10%;
+    width: 80%;
+    height: 300px;
+    background: linear-gradient(to left,rgb(250, 224, 175), rgb(225, 160, 148));
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0px 4px 20px -5px rgb(167, 1, 1);
+    transition-duration: 0.7s;
+}
+.catalog_menu:hover{
+    top: 4px;
+    box-shadow: 0 5px 0px grey;
+    background-color:rgb(235, 206, 152) ;
+    color: rgb(135, 2, 135);
+
+}
+
+.catalog_menu_div{
+    width:50% ;
+    height:100% ;
+}
+
+.catalog_menu_div_img{
+    width:100% ;
+    height:100% ;
+}
+
+.catalog_menu_tittle{
+    text-align: center;
+    margin-top: 6%;
+    height: 65%;
+    width: 50%;
+    
+}
+
+.catalog_menu_tittle_h3{
+    font-size: 26px;
+}
+
+
+.catalog_menu_tittle_button{
+    width: 50%;
+    height: 25%;
+    margin-top: 10%;
+    font-size: 22px;
+    font-style: italic;
+    background-color: rgb(205, 15, 1);
+    transition-duration: 1s;
+    border-radius: 10px;
+    color: white;
+    
+    
+}
+.catalog_menu_tittle_button:hover{
+    top: 2px;
+    box-shadow: 0 5px 0px grey;
+    background-color:rgb(235, 206, 152) ;
+    color: rgb(135, 2, 135);
+
+}
+
+
+
+
+.catalog_menu2{
+    
+    width: 80%;
+    margin: 1% 10%;
+    height: 300px;
+    background: linear-gradient(to right,rgb(250, 224, 175), rgb(225, 160, 148));
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0px 4px 20px -5px rgb(167, 1, 1);
+    transition-duration: 0.7s;
+}
+
+.catalog_menu2:hover{
+    top: 2px;
+    box-shadow: 0 5px 0px grey;
+    background-color:rgb(235, 206, 152) ;
+    color: rgb(135, 2, 135);
+
+}
+
+.catalog_menu_div2{
+    
+    width:50% ;
+    height:100% ;
+}
+
+.catalog_menu_div_img2{
+    width:100% ;
+    height:100%
+}
+
+.catalog_menu_tittle2{
+    
+    text-align: center;
+    margin-top: 6%;
+    height: 65%;
+    width: 50%;
+    
+}
+.catalog_menu_tittle_h3{
+    font-size: 26px;
+}
+
+.catalog_menu_tittle_h5{
+    font-size: 20px;
+}
+
+.catalog_menu_tittle_button2{
+    width: 50%;
+    height: 25%;
+    margin-top:10%;
+    font-size: 22px;
+    font-style: italic;
+    background-color: rgb(205, 15, 1);
+    transition-duration: 1s;
+    border-radius: 10px;
+    color: white;
+    
+    
+}
+.catalog_menu_tittle_button2:hover{
+    top: 2px;
+    box-shadow: 0 5px 0px grey;
+    background-color:rgb(235, 206, 152) ;
+    color: rgb(135, 2, 135);
+
+}
+
+
+@media(max-width:1199px) {
+    .catalog_menu{
+        height: 250px;
+    }
+    .catalog_menu2{
+        height: 250px;
+    }
+}
+@media(max-width:991px) {
+    .catalog_menu{
+        height: 220px;
+    }
+    .catalog_menu2{
+        height: 220px;
+    }
+    .Catalog_h1{
+        font-size: 24px;
+    }
+    .catalog_menu_tittle_h3{
+        font-size: 20px;
+    }
+    
+    .catalog_menu_tittle_h5{
+        font-size: 16px;
+    }
+    .catalog_menu_tittle_button{
+        font-size: 18px;
+    }
+    .catalog_menu_tittle_button2{
+        font-size: 18px;
+    }
+    
+    
+}
+@media(max-width:767px) {
+    .catalog_menu{
+        height: 190px;
+    }
+    .catalog_menu2{
+        height: 190px;
+    }
+    .Catalog_h1{
+        font-size: 22px;
+    }
+    .catalog_menu_tittle_h3{
+        font-size: 16px;
+    }
+    
+    .catalog_menu_tittle_h5{
+        font-size: 12px;
+    }
+    .catalog_menu_tittle_button{
+        font-size: 12px;
+    }
+    .catalog_menu_tittle_button2{
+        font-size: 12px;
+    }
+}
+
+
+@media(max-width:430px) {
+    .catalog_menu{
+        height: 140px;
+    }
+    .catalog_menu2{
+        height: 140px;
+    }
+    .Catalog_h1{
+        font-size: 18px;
+    }
+    .catalog_menu_tittle_h3{
+        font-size: 12px;
+    }
+    
+    .catalog_menu_tittle_h5{
+        font-size: 10px;
+    }
+    .catalog_menu_tittle_button{
+        font-size: 10px;
+        width: 70%;
+        height: 38%;
+    }
+    .catalog_menu_tittle_button2{
+        font-size: 10px;
+        width: 70%;
+        height: 38%;
+    }
+   
+
+}
+

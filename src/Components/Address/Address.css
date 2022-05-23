@@ -1,0 +1,273 @@
+.Address{
+    margin-top: 10%;
+    margin-left: 11%;
+    margin-right: 11%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Address_block1{
+    width: 26%;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    animation-name:identifier;
+    animation-duration: 4s;
+    box-shadow:  5px 5px 5px #a70c04;
+    transition-duration: 1s;
+}
+.Address_block1:hover{
+    top: 2px;
+    box-shadow: 0 5px 0px #3c354a;
+    background: linear-gradient(to right,rgb(250, 224, 175), rgb(225, 160, 148));
+}
+
+
+.Address_block2{
+    width: 32%;
+    height: 250px;
+    background-color: rgba(73, 5, 5, 1);
+    border-radius: 20px;
+    box-shadow:  5px 5px 5px #a70c04;
+    transition-duration: 1s;
+}
+.Address_block2:hover{
+    top: 2px;
+    box-shadow: 0 5px 0px #3c354a;
+    background:  rgb(227, 140, 124);
+}
+
+
+.Address_block3{
+    width: 26%;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:  5px 5px 5px #a70c04;
+    transition-duration: 1s;
+}
+
+.Address_block3:hover{
+    top: 2px;
+    box-shadow: 0 5px 0px #3c354a;
+    background: linear-gradient(to right,rgb(250, 224, 175), rgb(225, 160, 148));
+}
+
+.Address_block1-div{
+    margin-top: 7%;
+  
+}
+
+.Address_block1_img{
+    width: 26%;
+    margin-left: 35%;
+   
+}
+
+.Address_block1-div_h3{
+    font-style: normal;
+    text-align: center;
+
+    
+    
+}
+
+.Address_block1-div_address{
+    font-size: 20px;  
+    text-align: center;
+    
+}
+
+
+
+
+
+
+.Address_block2_div{
+    margin-top: 7%;
+   
+}
+
+.Address_block2_img{
+    width: 26%;
+    margin-left: 35%;
+}
+.Address_block2-div_h3{
+    font-style: normal;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    
+}
+
+.Address_block2-div_address{
+    font-size: 22px;
+    text-align: center;
+    color: white;
+}
+
+.Address_block3_div{
+    margin-top: 7%;
+    /* margin-left: 86px; */
+}
+
+.Address_block3_img{
+    width: 26%;
+    margin-left: 35%;
+}
+
+.Address_block3-div_h3{
+    font-style: normal;
+    text-align: center;
+    font-size: 26px;
+    
+}
+
+.Address_block3-div_address{
+    font-size: 22px;
+    text-align: center;
+}
+
+
+@media(max-width:1199px) {
+    
+    .Address_block1-div_h3{
+        font-size: 24px;
+    }
+    .Address_block1-div_address{
+        font-size: 20px;
+    }
+
+
+    .Address_block2-div_h3{
+        font-size: 24px;
+    }
+    .Address_block2-div_address{
+        font-size: 20px;
+    }
+
+    .Address_block3-div_h3{
+        font-size: 24px;
+    }
+    .Address_block3-div_address{
+        font-size: 20px;
+    }
+}
+
+
+
+@media(max-width:991px) {
+    .Address_block1{
+        height:180px ;
+    }
+
+    .Address_block1-div_h3{
+        font-size: 18px;
+    }
+    .Address_block1-div_address{
+        font-size: 14px;
+    }
+
+    .Address_block2{
+        height:180px ;
+    }
+    .Address_block2-div_h3{
+        font-size: 18px;
+    }
+    .Address_block2-div_address{
+        font-size: 14px;
+    }
+
+
+    .Address_block3{
+        height:180px ;
+    }
+    .Address_block3-div_h3{
+        font-size: 18px;
+    }
+    .Address_block3-div_address{
+        font-size: 14px;
+    }
+    
+}
+@media(max-width:767px) {
+    .Address_block1{
+        height:150px ;
+    }
+
+    .Address_block1-div_h3{
+        font-size: 15px;
+    }
+    .Address_block1-div_address{
+        font-size: 12px;
+    }
+
+    .Address_block2{
+        height:150px ;
+    }
+    .Address_block2-div_h3{
+        font-size: 15px;
+    }
+    .Address_block2-div_address{
+        font-size: 12px;
+    }
+
+
+    .Address_block3{
+        height:150px ;
+    }
+    .Address_block3-div_h3{
+        font-size: 15px;
+    }
+    .Address_block3-div_address{
+        font-size: 12px;
+    }
+}
+@media(max-width:575px) {
+    
+}
+
+@media(max-width:455px) {
+    .Address{
+        flex-wrap: wrap;
+    }
+    .Address_block1{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .Address_block2{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .Address_block3{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .Address_block1-div{
+        margin-top: 1%;
+      
+    }
+    .Address_block2-div{
+        margin-top: 1%;
+      
+    }
+    .Address_block3-div{
+        margin-top: 1%;
+      
+    }
+
+    .Address_block1_img{
+        width: 20%;
+        margin-left: 40%;
+    }
+    .Address_block2_img{
+        width: 16%;
+        margin-left: 40%;
+       
+    }
+    .Address_block3_img{
+        width: 18%;
+        margin-left: 40%;
+       
+    }
+}

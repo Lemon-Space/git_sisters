@@ -1,0 +1,65 @@
+.Logo{
+    width: 100%;
+    height: 600px;
+   
+}
+
+.Logo_red{
+    width: 100%;
+    height: 600px;
+    
+}
+
+
+
+@media(max-width:1199px) {
+    .Logo{
+        width: 100%;
+        height: 500px;
+       
+    }
+    .Logo_red{
+        width: 100%;
+        height: 500px;
+        
+    }
+}
+@media(max-width:991px) {
+    .Logo{
+        width: 100%;
+        height: 400px;
+       
+    }
+    .Logo_red{
+        width: 100%;
+        height: 400px;
+        
+    }
+    
+}
+@media(max-width:768px) {
+    .Logo{
+        width: 100%;
+        height: 350px;
+       
+    }
+    .Logo_red{
+        width: 100%;
+        height: 350px;
+        
+    }
+}
+
+
+@media(max-width:430px) {
+    .Logo{
+        width: 100%;
+        height: 250px;
+       
+    }
+    .Logo_red{
+        width: 100%;
+        height: 250px;
+        
+    }
+}
