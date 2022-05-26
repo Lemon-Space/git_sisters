@@ -3,15 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { createContext } from 'react';
+import UserAuth from './Auth/UserAuth';
+import PersonAuth from './Auth/PersonAuth';
+import { NavBar } from './Components/Admin/AdminHeader';
+
+export const Context = createContext(null)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
+  
+  
+  <Context.Provider value={{
+    user: new UserAuth(),
+    person: new PersonAuth()
+  }}>
+
     <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+
+  </Context.Provider>,
   document.getElementById('root')
 );
 

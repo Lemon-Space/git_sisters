@@ -3,7 +3,7 @@ import './App.css';
 import {Main} from './Components/Main'
 import {Education} from './Education/Education';
 
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, BrowserRouter} from 'react-router-dom'
 import {Manicure} from './CatalogsItem/Manicure/Manicure';
 import {FlaxLashes} from './CatalogsItem/FlaxLashes/FlaxLashes'
 import {Hair} from './CatalogsItem/Hair/Hair'
@@ -19,9 +19,19 @@ import {HairmanPrise }from './Price/Hairman/HairmanPrise';
 import {MassagePrise} from './Price/Massage/MassagePrise';
 import { ComponentsContact } from './componentsContact/ComponentsContact';
 import { ComponentsService } from './componentService/ComponentsService';
+import { Auth } from './Components/Admin/Auth';
+import { Admin,Pr } from './Components/Admin/Admin';
+import { useContext } from 'react';
+import { Context } from './index';
+import { NavBar } from './Components/Admin/AdminHeader';
 
-function App() {
-  return (
+const App = () => {
+  
+  const {user} = useContext(Context)
+  console.log(user)
+  if (true){
+    return (
+      <BrowserRouter>
     <div className="App">
       
      
@@ -50,14 +60,59 @@ function App() {
        <Route path='/massage' element={<MassagePrise/>} />
        <Route path='/shugaringservice' element={<ShugaringPrise/>} />
        <Route path='/education' element={<Education/>} />
+       <Route path='/auth' element={<Auth/>} />
+       <Route path='/admin' element={<Admin/>} />
        
 
-       
        
      </Routes>
     
     </div>
+    </BrowserRouter>
   );
+  }
+  return (
+    <BrowserRouter>
+    
+    <div className="App">
+      
+     
+
+     <Routes>
+       <Route path='/' element={<Main/>} />
+       <Route path='/education' element={<Education/>} />
+       <Route path='/componentscontact' element={<ComponentsContact/>} />
+       <Route path='/componentsservice' element={<ComponentsService/>} />
+
+
+       <Route path='/manicure' element={<Manicure/>} />
+       <Route path='/flaxlashes' element={<FlaxLashes/>} />
+       <Route path='/hair' element={<Hair/>} />
+       <Route path='/cosmo' element={<Cosmo/>} />
+       <Route path='/shugaring' element={<Shugaring/>} />
+
+
+
+       <Route path='/makeup' element={<MakeupPrise/>} />
+       <Route path='/cosmetics' element={<CosmeticsPrise/>} />
+       <Route path='/eyelash' element={<EyebrowPrise/>} />
+       <Route path='/manicureservice' element={<ManicurePrise/>} />
+       <Route path='/hairwomen' element={<HairwomenPrise/>} />
+       <Route path='/barber' element={<HairmanPrise/>} />
+       <Route path='/massage' element={<MassagePrise/>} />
+       <Route path='/shugaringservice' element={<ShugaringPrise/>} />
+       <Route path='/education' element={<Education/>} />
+       <Route path='/auth' element={<Auth/>} />
+       
+
+       
+     </Routes>
+    
+    </div>
+    </BrowserRouter>
+    
+  );
+  
 }
 
 export default App;

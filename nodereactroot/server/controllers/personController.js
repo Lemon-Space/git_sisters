@@ -3,7 +3,7 @@ const {Person} = require('../models/models')
 
 class personController{
     async create(req, res){
-        const {firstName,lastName,email,phone,description,called} = req.body
+        const {firstName,lastName,email,phone,description,called} = req.body.person       
         const person = await Person.create({firstName,lastName,email,phone,description,called})
         return res.json(person)
     }
