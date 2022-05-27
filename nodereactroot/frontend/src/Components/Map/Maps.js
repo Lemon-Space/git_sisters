@@ -46,7 +46,7 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
           })
       }
 
-
+      
     render(){
      return(
         
@@ -74,7 +74,7 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
           
             <input placeholder='Коментарий*' className='write_massage'type="text" description="description" onChange={this.desChange} />
           
-          <button className='write_button' type="submit">Отправить</button>
+          <button  className='write_button' type="submit">Отправить</button>
         </form>
       </div>
            
