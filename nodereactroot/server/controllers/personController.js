@@ -3,13 +3,16 @@ const {Person} = require('../models/models')
 
 class personController{
     async create(req, res){
-        const {firstName,lastName,email,phone,description,called} = req.body.person       
+        console.log(req)
+        const {firstName,lastName,email,phone,description,called} = req.body.person     
         const person = await Person.create({firstName,lastName,email,phone,description,called})
+        console.log(person)
         return res.json(person)
     }
     async getOne(req, res){
     }
     async getAll(req, res){
+        console.log('getAll start')
         const {called} = req.query
         let people;
         if (!called){
