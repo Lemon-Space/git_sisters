@@ -7,7 +7,6 @@ import {NavLink, useLocation, useNavigate} from "react-router-dom";
 import {login} from "./userAPI";
 import {observer} from "mobx-react-lite";
 import {Context} from "../../index";
-import {NavBar} from './AdminHeader'
 
 const Auth = observer(() => {
     const {user} = useContext(Context)

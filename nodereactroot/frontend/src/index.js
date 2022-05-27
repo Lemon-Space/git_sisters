@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { createContext } from 'react';
 import UserAuth from './Auth/UserAuth';
 import PersonAuth from './Auth/PersonAuth';
-import { NavBar } from './Components/Admin/AdminHeader';
 
 export const Context = createContext(null)
 

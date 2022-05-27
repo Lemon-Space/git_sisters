@@ -15,10 +15,10 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
     }
     fnChange = event => {
-        this.setState({ firstName: event.target.value });
+        this.setState({ firstname: event.target.value });
       }
       lnChange = event => {
-        this.setState({lastName: event.target.value});
+        this.setState({lastname: event.target.value});
       }
       phChange = event => {
         this.setState({phone: event.target.value});
@@ -54,16 +54,16 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
          <div className="Maps">
              <div className="write" id="spy={true}
-    smooth={true}
-    offset={-70}
-    duration={500}">
+                smooth={true}
+                offset={-70}
+                duration={500}">
         <h3 className="write_h3">Напишите нам!</h3>
         <form className="Write_div" onSubmit={this.handleSubmit}>
           
             <input placeholder='Имя' className='write_name' type="text" firstName="firstName" onChange={this.fnChange} />
           
           
-            <input placeholder='Фамилия' className='write_name'type="text" lastName="lastName" onChange={this.lnChange} />
+            <input placeholder='Фамилия' className='write_name'type="text" lastName="lastname" onChange={this.lnChange} />
           
           
             <input placeholder='Телефон' className='write_number'type="text" phone='phone' onChange={this.phChange} />
@@ -72,7 +72,7 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
             <input placeholder='email' className='write_mail'type="text" lastName="email" onChange={this.emChange} />
           
           
-            <input placeholder='Коментарий' className='write_massage'type="text" lastName="description" onChange={this.desChange} />
+            <input placeholder='Коментарий' className='write_massage'type="text" description="description" onChange={this.desChange} />
           
           <button className='write_button' type="submit">Отправить</button>
         </form>

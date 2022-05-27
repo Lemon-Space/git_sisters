@@ -88,7 +88,8 @@
         font-size: small;
     }
     .image_img{
-        height: 200px;
+        width: 160px;
+        height: 250px;
     }
  }
  @media(max-width:374px){

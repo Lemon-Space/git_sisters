@@ -149,12 +149,12 @@
         font-size: 10px;
     }
     .main_photo{
-        margin-left: 2%;
-        width: 40%;
-        height: 70%;
+        margin-right: 0%;
+        width: 34%;
+        height: 66%;
     }
 }
-@media(max-width:376px) {
+@media(max-width:374px) {
     .MainEducation{
         height: 350px;
     }
@@ -165,7 +165,7 @@
         font-size: 14px;
     }
     .main_span{
-        font-size:xx-small;
+        font-size:8px;
     }
     .button_p{
         font-size:xx-small;
@@ -175,6 +175,6 @@
     }
     .main_photo{
         margin-left: 2%;
-        width: 35%;
+        width: 32%;
     }
 }
