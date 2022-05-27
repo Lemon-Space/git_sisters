@@ -19,8 +19,8 @@ import {HairmanPrise }from './Price/Hairman/HairmanPrise';
 import {MassagePrise} from './Price/Massage/MassagePrise';
 import { ComponentsContact } from './componentsContact/ComponentsContact';
 import { ComponentsService } from './componentService/ComponentsService';
-import { Auth } from './Components/Admin/Auth';
-import { Admin } from './Components/Admin/Admin';
+
+
 import { useContext } from 'react';
 import { Context } from './index';
 
@@ -59,8 +59,8 @@ const App = () => {
        <Route path='/massage' element={<MassagePrise/>} />
        <Route path='/shugaringservice' element={<ShugaringPrise/>} />
        <Route path='/education' element={<Education/>} />
-       <Route path='/auth' element={<Auth/>} />
-       <Route path='/admin' element={<Admin/>} />
+       
+      
        
 
        
