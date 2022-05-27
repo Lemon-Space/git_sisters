@@ -1,0 +1,162 @@
+.About{
+height: 1150px;
+
+width: 100%;
+}
+.about_main_div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about_tittle{
+    
+   margin-top: 2%;
+}
+
+.about_tittle_h1{
+    font-style: italic;
+    font-size: 54px;
+    color: rgb(35, 1, 49);
+    margin-left: 5%;
+    text-shadow: 0 2px 2px rgba(245, 193, 46, 1);
+    margin-top: 5%;
+
+}
+/* .about_tittle_h1.active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+} */
+    
+
+.about_tittle_h4{
+    font-size: medium;
+    color: #5A5A5A;
+    margin-top: 5%;
+}
+
+.about_tittle_span{
+    font-style: oblique;
+    font-size: larger;
+    
+}
+
+.about_main_picture{
+    margin-top: 10%;
+    width: 30%;
+}
+
+.about_main_img{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    border: 4px solid rgb(195, 55, 39);
+}
+
+.about_diplom{
+    margin: 4% 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about_diplom_slider{
+    width: 31%;
+}
+.about_diplom_img{
+    height: 100%;
+    width: 30%;
+    border: 4px solid red;
+    border-radius: 10px;
+    
+}
+.about_Carousel_item{
+    height: 500px;
+    border: 5px solid #790303;
+    
+}
+
+@media(max-width:1200px) {
+    .About{
+        height: max-content;
+    }
+
+    .about_main_img{
+        height: 450px;
+    }
+
+    .about_tittle_span{
+        font-size: medium;
+    }
+}
+@media(max-width:992px) {
+    .About{
+        height: max-content;
+    }
+    .about_tittle_h1{
+        font-size: 44px;
+    }
+    .about_tittle_h4{
+        font-size: small;
+    }
+    
+    .about_main_img{
+        height: 420px;
+    }
+    .about_tittle_span{
+        font-size:small;
+    }
+    .about_Carousel_item{
+        height: 400px;
+    }
+    
+}
+@media(max-width:767px) {
+    .About{
+        height: max-content;
+    }
+    .about_tittle_h1{
+        font-size: 34px;
+    }
+    .about_tittle_h4{
+        font-size: small;
+    }
+    .about_main_img{
+        height: 360px;
+    }
+    .about_tittle_span{
+        font-size:smaller;
+    }
+}
+
+
+@media(max-width:430px) {
+    .about_main_div{
+        flex-wrap: wrap;
+        height: max-content;
+    }
+    .about_diplom{
+        margin: 4% 0;
+        width: 100%;
+       flex-wrap: wrap;
+    }
+    .about_diplom_slider{
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .about_tittle{
+        width: 100%;
+        text-align: center;
+    }
+    .about_main_picture{
+        width: 70%;
+        
+    }
+    .about_main_img{
+        height: 380px;
+    }
+
+    .about_tittle_h1{
+        font-size: 30px;
+    }
+
+}
