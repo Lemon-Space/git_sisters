@@ -40,7 +40,7 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
             email : this.state.email,
             description : this.state.description
         };
-    
+        console.log(person)
         axios.post(`http://localhost:5000/api/person`, { person })
           .then(res => {
           })
