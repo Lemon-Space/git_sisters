@@ -121,7 +121,9 @@
         
     }
     .telephone_img{
+        width: 90px;
         height: 100px;
+        transform: none;
     }
     .Strelka{
         display: none;
