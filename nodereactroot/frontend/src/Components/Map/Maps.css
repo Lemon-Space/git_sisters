@@ -57,11 +57,21 @@
 }
 .write_button{
     width: 80%;
+    font-size: larger;
+    color: bisque;
     margin-left: 10%;
     margin-top: 10%;
     height: 13%;
     border-radius: 30px;
-    background-color: brown;
+    background-color: rgb(165, 4, 4);
+    box-shadow:  0px 5px 0px #080808;
+    transition-duration: 1s;
+}
+.write_button:hover{
+    top: 4px;
+    background-color: bisque;
+    box-shadow: 0 5px 0px #3c354a;
+    color: rgb(6, 6, 6);
 }
 
 .write_gis{

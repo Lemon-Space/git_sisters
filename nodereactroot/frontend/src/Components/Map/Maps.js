@@ -15,10 +15,10 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
     }
     fnChange = event => {
-        this.setState({ firstname: event.target.value });
+        this.setState({ firstName: event.target.value });
       }
       lnChange = event => {
-        this.setState({lastname: event.target.value});
+        this.setState({lastName: event.target.value});
       }
       phChange = event => {
         this.setState({phone: event.target.value});
@@ -63,16 +63,16 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps';
             <input placeholder='Имя' className='write_name' type="text" firstName="firstName" onChange={this.fnChange} />
           
           
-            <input placeholder='Фамилия' className='write_name'type="text" lastName="lastname" onChange={this.lnChange} />
+            <input placeholder='Фамилия' className='write_name'type="text" lastName="lastName" onChange={this.lnChange} />
           
           
             <input placeholder='Телефон' className='write_number'type="text" phone='phone' onChange={this.phChange} />
           
           
-            <input placeholder='email' className='write_mail'type="text" lastName="email" onChange={this.emChange} />
+            <input placeholder='email*' className='write_mail'type="text" lastName="email" onChange={this.emChange} />
           
           
-            <input placeholder='Коментарий' className='write_massage'type="text" description="description" onChange={this.desChange} />
+            <input placeholder='Коментарий*' className='write_massage'type="text" description="description" onChange={this.desChange} />
           
           <button className='write_button' type="submit">Отправить</button>
         </form>
