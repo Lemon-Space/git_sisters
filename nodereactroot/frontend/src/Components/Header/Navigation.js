@@ -23,7 +23,7 @@ const Navigation = () => {
                     <a href="https://www.instagram.com/aura_krasoty_surgut.86/" className="">
                         <img src={Instagram} className="Social_media_logo" />
                     </a>
-                    <a href="" className="Social_media_logo_a_whats">
+                    <a href="" className="">
                         <img src={Whatsapp} className="Social_media_logo" />
                     </a>
         </div>

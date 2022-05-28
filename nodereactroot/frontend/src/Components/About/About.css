@@ -9,15 +9,17 @@ width: 100%;
 }
 
 .about_tittle{
-    
+    width: 50%;
    margin-top: 2%;
+   
 }
 
 .about_tittle_h1{
+    text-align: center;
     font-style: italic;
     font-size: 54px;
     color: rgb(35, 1, 49);
-    margin-left: 5%;
+   
     text-shadow: 0 2px 2px rgba(245, 193, 46, 1);
     margin-top: 5%;
 
@@ -29,12 +31,15 @@ width: 100%;
     
 
 .about_tittle_h4{
-    font-size: medium;
+    text-align: center;
+    font-size: 22px;
     color: #5A5A5A;
-    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 .about_tittle_span{
+    
+   
     font-style: oblique;
     font-size: larger;
     
@@ -95,9 +100,11 @@ width: 100%;
         font-size: 44px;
     }
     .about_tittle_h4{
-        font-size: small;
+        font-size: medium;
     }
-    
+    .about_main_picture{
+        margin-top: 15%;
+    }
     .about_main_img{
         height: 420px;
     }
@@ -138,6 +145,9 @@ width: 100%;
         width: 100%;
        flex-wrap: wrap;
     }
+    .about_tittle_h4{
+        font-size: 16px;
+    }
     .about_diplom_slider{
         width: 80%;
         margin-top: 5%;
@@ -146,6 +156,7 @@ width: 100%;
     .about_tittle{
         width: 100%;
         text-align: center;
+        padding: 0 4%;
     }
     .about_main_picture{
         width: 70%;
