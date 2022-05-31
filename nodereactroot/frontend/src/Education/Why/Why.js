@@ -33,7 +33,7 @@ function Why () {
                 <div className="why_comfort">
                     <img className="why_comfort_img3" src={study} />
                     <div> <h3 className="why_comfort_h3">Современная учебная база</h3>
-                    <p className="why_comfort_p">Обучение проходит в стильном, модном учебном центре,<br/> где xуютно, комфортно и чисто.</p></div>
+                    <p className="why_comfort_p">Обучение проходит в стильном, модном учебном центре,<br/> где уютно, комфортно и чисто.</p></div>
                    
                 </div>
                 <div className="why_comfort2">
