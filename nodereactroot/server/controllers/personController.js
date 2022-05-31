@@ -24,6 +24,9 @@ class personController{
         
         return res.json(people)
     }
+    async deleteList(req,res){
+        console.log(req)
+    }
 }
 
 module.exports = new personController()

@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<title>EJS Is Fun</title>
+    <title>EJS Is Fun</title>
 
-<!-- CSS (load bootstrap from a CDN) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-<style>
-    body { padding-top:50px; }
-</style>
+    <!-- CSS (load bootstrap from a CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body { padding-top:50px; }
+    </style>
 </head>
 <body class="container">
 
@@ -16,10 +16,49 @@
 </header>
 
 <main>
-    <%- table %>
+<div>
+    <form method="post" >
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Введите id для удаления через пробел: </label>
+            <input name="id" type="text" class="form-control" id="inputEmail4" placeholder="id">
+          </div>
+        </div>
+        <input type="submit" value="Удалить выбранные">
+    </form>
+</div>
+<br/>
+<div>
+    <table class="table">
+        
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Имя</th>
+            <th scope="col">Фамилия</th>
+            <th scope="col">Телефон</th>
+            <th scope="col">email</th>
+            <th scope="col">Комментарий</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% people.forEach(function(person) { %>
+          <tr>
+            <th scope="row"><%= person.id %></th>
+            <td><%= person.firstName %></td>
+            <td><%= person.lastName %></td>
+            <td><%= person.phone %></td>
+            <td><%= person.email %></td>
+            <td><%= person.description %></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+</div>
 </main>
 
 <footer>
+    <p class="text-center text-muted">© Copyright 2022 @web_flutter</p>
 </footer>
 
 </body>

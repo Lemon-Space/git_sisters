@@ -7,27 +7,36 @@ const cors = require('cors')
 const router = require('./routes/index')
 const errorHandler = require('./middleware/ErrorHandlingMiddleware')
 const Jsontableify = require('jsontableify')
+const bodyParser = require('body-parser');
 
 
 const PORT = process.env.PORT || 5000
 
 const app = express()
+app.use(bodyParser.urlencoded({limit: '5000mb', extended: true, parameterLimit: 100000000000}));
 app.set('view engine', 'ejs');
 app.use(cors())
 app.use(express.json())
 app.use('/api',router)
 app.get('/admin', async function(req, res) {
-    var people = await models.Person.findAll()
-    var l = []
-    people.map(person=>l.push(person.dataValues))
+    var p = await models.Person.findAll()
+    var people = []
+    p.map(person=>people.push(person.dataValues))
 
-    const { html } = new Jsontableify().toHtml(l)
-    var html1 = '<!DOCTYPE html><html><head><meta charset="utf-8" /><title>HTML5</title></head><body>'
-    var html2 = '</body></html>'
-    res.end(html1+html+html2)
-    //res.render('pages/admin',{
-    //    table: table,
-    //});
+    //const { html } = new Jsontableify().toHtml(l)
+    res.render('pages/admin', {
+        people: people,
+    });
+});
+app.post('/admin',async function(req,res){
+    let toDel = req.body.id.split(' ')
+    delPeople = await models.Person.findAll()
+    models.Person.destroy({
+        where: {
+            id:toDel
+        }
+    })
+    res.end('Successfully deleted!')
 });
 
 app.use(errorHandler) //должен стоять в конце списка use
